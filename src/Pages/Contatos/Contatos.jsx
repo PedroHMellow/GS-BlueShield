@@ -6,22 +6,22 @@ import { FaGithubSquare } from "react-icons/fa";
 function Contatos () {
     return (
         <>
-            <section className="bg-Azul_Fiap w-full h-screen">
+            <section style={{backgroundImage: "url('Banner.png')"}} >
                 <Header /> 
 
-                <div className="flex p-24">
+                <div className="flex pt-24 p-5">
                     <h1 className="text-white text-5xl"> Contatos </h1>
                 </div>
 
-                <div className="grid grid-cols-3 grid-rows-1 ">
+                <div className="grid grid-cols-3 grid-rows-1 relative">
 
-                    <div className="bg-white m-3 border-2 border-black rounded-lg border-solid	scale-1 hover:scale-110 drop-shadow-lg">
+                    <div className=" backdrop-blur-md bg-white/30  m-3 border-2 border-slate-300 rounded-lg border-solid drop-shadow-lg">  
                         <div className="flex justify-center pt-4 ">
                             <img src="/public/undraw_pic_profile_re_7g2h (3).svg" alt="" className="w-40 h-40 drop-shadow-lg"/>
                         </div>
                         <div className="flex flex-col p-4">
                             <div className="flex justify-center">
-                                <p className="pl-2 text-2xl	text-Azul_Fiap"> Gustavo Gouvêa Soares </p> 
+                                <p className="pl-2 text-2xl	text-Azul_Fiap2"> Gustavo Gouvêa Soares </p> 
                             </div>
                             <div className="flex pt-5 text-xl">
                                 <span className="font-bold"> RM: </span>
@@ -35,13 +35,13 @@ function Contatos () {
                         </div>
                     </div>
                     
-                    <div className="bg-white m-3 border-2 border-black rounded-lg border-solid	scale-1 hover:scale-110 drop-shadow-lg">
+                    <div className=" backdrop-blur-md bg-white/30  m-3 border-2 border-slate-300 rounded-lg border-solid drop-shadow-lg">
                         <div className="flex justify-center pt-4 ">
                             <img src="/public/undraw_pic_profile_re_7g2h (2).svg" alt="" className="w-40 h-40 drop-shadow-lg"/>
                         </div>
                         <div className="flex flex-col p-4">
                             <div className="flex justify-center">
-                                <p className="pl-2 text-2xl	text-Azul_Fiap"> Henrique Rafael Gomes de Souza </p> 
+                                <p className="pl-2 text-2xl	text-Azul_Fiap2"> Henrique Rafael Gomes de Souza </p> 
                             </div>
                             <div className="flex pt-5 text-xl">
                                 <span className="font-bold"> RM: </span>
@@ -55,13 +55,13 @@ function Contatos () {
                         </div>
                     </div>
 
-                    <div className="bg-white m-3 border-2 border-black rounded-lg border-solid	scale-1 hover:scale-110 drop-shadow-lg">
+                    <div className=" backdrop-blur-md bg-white/30  m-3 border-2 border-slate-300 rounded-lg border-solid drop-shadow-lg">
                         <div className="flex justify-center pt-4 ">
                             <img src="/public/undraw_pic_profile_re_7g2h (1).svg" alt="" className="w-40 h-40 drop-shadow-lg"/>
                         </div>
                         <div className="flex flex-col p-4">
                             <div className="flex justify-center">
-                                <p className="pl-2 text-2xl	text-Azul_Fiap"> Pedro Henrique Mello Silva Alves </p> 
+                                <p className="pl-2 text-2xl	text-Azul_Fiap2"> Pedro Henrique Mello Silva Alves </p> 
                             </div>
                             <div className="flex pt-5 text-xl">
                                 <span className="font-bold"> RM: </span>
@@ -76,7 +76,7 @@ function Contatos () {
                     </div>
                 </div>
                 
-                <div className="pt-5"></div>
+                <div className="p-14"></div>
                 
                 <Footer />
             </section>
