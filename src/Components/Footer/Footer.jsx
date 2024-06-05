@@ -22,12 +22,14 @@ function Footer () {
                         
                         <div className="pt-5 flex flex-col justify-start ">
                             
-                            <div className="flex items-center text-2xl text-white hover:text-Azul_Fiap2 cursor-pointer">
-                               <samp className="text-2xl text-white  hover:text-Azul_Fiap2 cursor-pointer pr-3"> 
-                                 Github 
-                               </samp> 
-                               <FaGithubSquare /> 
-                            </div>
+                            <a href="https://github.com/PedroHMellow/GS-BlueShield.git">
+                                <div className="flex items-center text-2xl text-white hover:text-Azul_Fiap2 cursor-pointer">
+                                    <samp className="text-2xl text-white  hover:text-Azul_Fiap2 cursor-pointer pr-3"> 
+                                        Github 
+                                    </samp> 
+                                    <FaGithubSquare /> 
+                                </div>
+                            </a>
                             <div className="flex items-center text-2xl text-white hover:text-Azul_Fiap2 cursor-pointer">
                                <samp className="text-2xl text-white  hover:text-Azul_Fiap2 cursor-pointer pr-3"> 
                                  Youtube 
