@@ -3,7 +3,7 @@ function Header () {
     return (
     
     <>
-        <nav className=" backdrop-blur-md bg-Azul_Fiap border-b border-slate-900/10 absolute w-full">
+        <nav className=" backdrop-blur-md bg-Azul_Fiap border-b border-slate-900/10 absolute w-full min-w-max	">
             <ul className="flex items-center justify-around">
                 <li>
                     <Link to="/" className="flex items-center">

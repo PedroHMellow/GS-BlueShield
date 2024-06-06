@@ -6,14 +6,14 @@ import { FaGithubSquare } from "react-icons/fa";
 function Contatos () {
     return (
         <>
-            <section style={{backgroundImage: "url('Banner.png')"}} >
+            <section style={{backgroundImage: "url('Banner.png')"}} className="min-w-full">
                 <Header /> 
 
                 <div className="flex pt-24 p-5">
                     <h1 className="text-white text-5xl"> Contatos </h1>
                 </div>
 
-                <div className="grid grid-cols-3 grid-rows-1 relative">
+                <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 relative">
 
                     <div className=" backdrop-blur-md bg-white/30  m-3 border-2 border-slate-300 rounded-lg border-solid drop-shadow-lg">  
                         <div className="flex justify-center pt-4 ">
@@ -21,7 +21,7 @@ function Contatos () {
                         </div>
                         <div className="flex flex-col p-4">
                             <div className="flex justify-center">
-                                <p className="pl-2 text-2xl	text-Azul_Fiap2"> Gustavo Gouvêa Soares </p> 
+                                <p className="pl-2 text-2xl text-black md:text-Azul_Fiap2"> Gustavo Gouvêa Soares </p> 
                             </div>
                             <div className="flex pt-5 text-xl">
                                 <span className="font-bold"> RM: </span>
@@ -41,7 +41,7 @@ function Contatos () {
                         </div>
                         <div className="flex flex-col p-4">
                             <div className="flex justify-center">
-                                <p className="pl-2 text-2xl	text-Azul_Fiap2"> Henrique Rafael Gomes de Souza </p> 
+                                <p className="pl-2 text-2xl text-black md:text-Azul_Fiap2"> Henrique Rafael Gomes de Souza </p> 
                             </div>
                             <div className="flex pt-5 text-xl">
                                 <span className="font-bold"> RM: </span>
@@ -61,7 +61,7 @@ function Contatos () {
                         </div>
                         <div className="flex flex-col p-4">
                             <div className="flex justify-center">
-                                <p className="pl-2 text-2xl	text-Azul_Fiap2"> Pedro Henrique Mello Silva Alves </p> 
+                                <p className="pl-2 text-2xl text-black md:text-Azul_Fiap2"> Pedro Henrique Mello Silva Alves </p> 
                             </div>
                             <div className="flex pt-5 text-xl">
                                 <span className="font-bold"> RM: </span>
