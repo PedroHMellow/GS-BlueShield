@@ -1,11 +1,47 @@
 import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import { Link } from "react-router-dom";
+import { register, login, validateToken } from '../../Services/api.js';
+import React, { useState } from 'react';
 
 function Home () {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [token, setToken] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleRegister = async () => {
+        try {
+            await register(username, password);
+            setMessage('User registered successfully');
+        } catch (error) {
+            setMessage('Error registering user');
+        }
+    };
+
+    const handleLogin = async () => {
+        try {
+            const response = await login(username, password);
+            setToken(response.data.token);
+            setMessage('User logged in successfully');
+        } catch (error) {
+            setMessage('Error logging in');
+        }
+    };
+
+    const handleValidate = async () => {
+        try {
+            const response = await validateToken(token);
+            setMessage(response.data.message);
+        } catch (error) {
+            setMessage('Invalid token');
+        }
+    };
+
     return (
         <>
             <Header />
+            
 
             <section style={{backgroundImage: "url('Banner.png')"}} className="h-screen min-w-full">
 
@@ -18,6 +54,25 @@ function Home () {
                         <p className="text-white mt-5 text-sm md:text-md lg:text-lg text-justify">
                             Desenvolvemos um sistema baseado em Arduino que monitora perturbações nos mares em corpos d'água, como variações de temperatura (seja ela baixa ou alta) e níveis de oxigenação da água, ph(grau de acidez), permitindo intervenções quando necessário.
                         </p>
+                        <div>
+            <h1>User Authentication</h1>
+            <input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+            />
+            <button onClick={handleRegister}>Register</button>
+            <button onClick={handleLogin}>Login</button>
+            <button onClick={handleValidate}>Validate Token</button>
+            <p>{message}</p>
+        </div>
                         <div className="w-40 mb-12">
                             <Link to="/Dashboard" > 
                                 <button className="flex justify-center items-center bg-Azul_ODS14 text-white border-2 rounded-lg p-3 px-7 mt-10">
